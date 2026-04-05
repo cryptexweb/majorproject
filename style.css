@@ -1,0 +1,161 @@
+/*
+Theme Name: MojarProject Pro
+Author: Major
+Description: Advanced Skincare E-Commerce Theme for PROG1442.
+Version: 2.0
+*/
+
+/* Professional Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6; background: #fff; width: 100%; overflow-x: hidden; }
+
+/* Layout Containers - Increased for Professional Feel */
+.container { width: 95%; max-width: 1300px; margin: 0 auto; }
+
+/* Header & Navigation */
+header { background: #fff; padding: 15px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.logo-text { font-size: 1.6rem; font-weight: bold; color: #d4a373; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
+.site-logo img { max-height: 70px; width: auto; display: block; }
+
+nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+nav ul li a { text-decoration: none; color: #444; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s; }
+nav ul li a:hover { color: #d4a373; }
+
+/* Hero Section */
+.hero-skincare { background: #fdf6f0; padding: 120px 0; text-align: center; width: 100%; }
+.hero-skincare h1 { font-size: 3.5rem; margin: 20px 0; color: #1a1a1a; line-height: 1.2; }
+.hero-skincare p { font-size: 1.2rem; color: #666; margin-bottom: 30px; }
+
+/* Section Spacing */
+.section-padding { padding: 80px 0; width: 100%; clear: both; }
+.section-title { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: #1a1a1a; }
+
+/* Category Grid & Cards */
+.cat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.cat-card { background: #fff; padding: 40px; border: 1px solid #eee; text-align: center; transition: 0.4s; border-radius: 5px; }
+.cat-card:hover { border-color: #d4a373; transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.cat-card h3 { margin: 15px 0; font-size: 1.5rem; }
+
+/* Buttons */
+.btn-primary { background: #d4a373; color: #fff; padding: 15px 40px; text-decoration: none; font-weight: bold; text-transform: uppercase; display: inline-block; transition: 0.3s; border-radius: 2px; }
+.btn-primary:hover { background: #1a1a1a; color: #fff; transform: scale(1.05); }
+
+/* Stock Alert Styling */
+.stock-alert { text-align: center; padding: 20px; font-weight: bold; letter-spacing: 0.5px; }
+
+/* Footer */
+footer { background: #1a1a1a; color: #aaa; text-align: center; padding: 60px 0; }
+footer a { color: #d4a373; text-decoration: none; margin: 0 10px; }
+/* WooCommerce Shop Page Styling */
+.woocommerce .products ul, .woocommerce ul.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.woocommerce ul.products li.product {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.woocommerce ul.products li.product:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #d4a373;
+}
+
+.woocommerce ul.products li.product img {
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #d4a373;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Fix the Add to Cart Button */
+.woocommerce ul.products li.product .button {
+    background-color: #d4a373;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-radius: 2px;
+    margin-top: 15px;
+}
+
+.woocommerce ul.products li.product .button:hover {
+    background-color: #1a1a1a;
+}
+/* WooCommerce Shop Page Layout */
+.woocommerce .products ul, 
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+    list-style: none;
+}
+
+/* Individual Product Card */
+.woocommerce ul.products li.product {
+    width: 300px; 
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.woocommerce ul.products li.product:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #d4a373;
+}
+
+/* Product Price & Title */
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #1a1a1a;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #d4a373;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Professional Add to Cart Button */
+.woocommerce ul.products li.product .button {
+    background-color: #d4a373 !important;
+    color: #fff !important;
+    padding: 12px 25px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.woocommerce ul.products li.product .button:hover {
+    background-color: #1a1a1a !important;
+}
