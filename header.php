@@ -10,11 +10,22 @@
         <div class="container header-flex">
             <div class="site-logo">
                 <?php if (has_custom_logo()) : the_custom_logo(); else : ?>
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-text"><?php bloginfo('name'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-text">
+                        <?php bloginfo('name'); ?>
+                    </a>
                 <?php endif; ?>
             </div>
-            <nav>
-                <?php wp_nav_menu(array('theme_location' => 'primary', 'fallback_cb' => false)); ?>
-            </nav>
+
+          <nav class="main-navigation">
+    <ul class="nav-menu">
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+        
+        <li><a href="<?php echo esc_url(home_url('/about')); ?>">About</a></li>
+        
+        <li><a href="<?php echo esc_url(home_url('/shop')); ?>">Shop</a></li>
+        
+        <li><a href="<?php echo esc_url(home_url('/contact')); ?>">Contact</a></li>
+    </ul>
+</nav>
         </div>
     </header>
