@@ -67,7 +67,6 @@
 
 <section class="section-padding" style="background: #1a1a1a; color: #fff;">
     <div class="container">
-        <h2 class="section-title" style="color: #fff;">Customer Results</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
             <?php 
             $reviews = new WP_Query(array('post_type' => 'reviews', 'posts_per_page' => 2));
