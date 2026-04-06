@@ -5,11 +5,10 @@ Description: Advanced Skincare E-Commerce Theme for PROG1442.
 Version: 2.0
 */
 
-/* Professional Reset */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #333; line-height: 1.6; background: #fff; width: 100%; overflow-x: hidden; }
 
-/* Layout Containers - Increased for Professional Feel */
+/* Layout Containers  */
 .container { width: 95%; max-width: 1300px; margin: 0 auto; }
 
 /* Header & Navigation */
@@ -21,6 +20,7 @@ header { background: #fff; padding: 15px 0; border-bottom: 1px solid #eee; posit
 nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
 nav ul li a { text-decoration: none; color: #444; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s; }
 nav ul li a:hover { color: #d4a373; }
+
 
 /* Hero Section */
 .hero-skincare { background: #fdf6f0; padding: 120px 0; text-align: center; width: 100%; }
@@ -86,7 +86,7 @@ footer a { color: #d4a373; text-decoration: none; margin: 0 10px; }
     font-size: 1.2rem;
 }
 
-/* Fix the Add to Cart Button */
+/* Add to Cart Button */
 .woocommerce ul.products li.product .button {
     background-color: #d4a373;
     color: #fff;
@@ -158,4 +158,221 @@ footer a { color: #d4a373; text-decoration: none; margin: 0 10px; }
 
 .woocommerce ul.products li.product .button:hover {
     background-color: #1a1a1a !important;
+}
+
+/* --- Contact Page Custom Styles --- */
+
+/* Wrapper for the sidebar and the form */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 50px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+/* Info Cards (Sidebar) */
+.contact-info .info-card {
+    background: #fdf6f0; 
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border-left: 4px solid #d4a373; 
+    transition: 0.3s;
+}
+
+.contact-info .info-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Contact Form Area */
+.contact-form-area {
+    background: #fff;
+    padding: 45px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.contact-form-area h3 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+}
+
+/* Form Groups & Inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fafafa;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d4a373;
+    background: #fff;
+}
+
+/* Submit Button -  */
+.submit-btn {
+    background: #d4a373;
+    color: #fff;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1a1a1a;
+    transform: translateY(-3px);
+}
+
+/* Responsive fix for Mobile */
+@media (max-width: 850px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr; 
+    }
+    
+    .contact-form-area {
+        padding: 25px;
+    }
+}
+
+/* --- About Page Custom Styles --- */
+
+.about-hero {
+    background: #fdf6f0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #d4a373;
+    font-style: italic;
+}
+
+/* Main Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+/* Image Box Styling */
+.about-image-box {
+    background: #eee;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+
+.image-placeholder-text {
+    color: #aaa;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Values Section Styling */
+.values-section {
+    background: #f9f9f9;
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.value-item h3 {
+    color: #d4a373;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 0.95rem;
+    color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-image-box {
+        height: 300px;
+    }
 }
